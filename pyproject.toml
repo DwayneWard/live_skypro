@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "задачи кузница исходники"
+version = "0.1.0"
+description = ""
+authors = ["s.leontev <neonyan15@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+psutil = "^5.9.4"
+requests = "^2.29.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
