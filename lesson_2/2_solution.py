@@ -87,14 +87,14 @@ else:
 # Запрос ввода суммы покупок у пользователя
 purchase_amount = float(input("Введите сумму покупок: "))
 # Вычисление уровня скидки пользователя
-if purchase_amount >= 25000:
-    discount_percent = 10
-elif purchase_amount >= 10000:
-    discount_percent = 5
-elif purchase_amount >= 5000:
+if purchase_amount <= 5000:
     discount_percent = 2
+elif purchase_amount <= 10000:
+    discount_percent = 5
+elif purchase_amount <= 25000:
+    discount_percent = 10
 else:
-    discount_percent = 0
+    discount_percent = 15
 # Вывод сообщения с уровнем скидки пользователя
 print("Ваш уровень скидки", discount_percent, "%")
 
